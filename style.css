@@ -45,10 +45,12 @@ body {
 }
 
 .nombres {
-  font-size: 35px;
-  font-style: italic;
+  font-family: "Brush Script MT", "Segoe Script", cursive;
+  font-size: 42px;
+  font-style: normal;
   margin-top: 30px;
   color: #51402d;
+  letter-spacing: 1px;
 }
 
 .sello {
@@ -106,4 +108,36 @@ h1 {
 .decoracion {
   font-size: 30px;
   margin: 15px;
+}
+.sello {
+  width: 85px;
+  height: 85px;
+  margin: 20px auto;
+  border-radius: 50%;
+  background: #7a4935;
+  color: #f8f0df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  border: 5px solid #a67c52;
+  box-shadow: 0 4px 10px rgba(0,0,0,.2);
+}
+
+.tarjeta:before {
+  content: "🌿";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 45px;
+  opacity: .7;
+}
+
+.tarjeta:after {
+  content: "🌾";
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 45px;
+  opacity: .7;
 }

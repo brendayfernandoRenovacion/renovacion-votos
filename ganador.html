@@ -1,52 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ganador</title>
+<title>Ganaste</title>
 
-<style>
-body {
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #efe3d0;
-  font-family: Georgia, serif;
-  color: #4b3928;
-}
-
-.tarjeta {
-  background: #fffaf2;
-  width: 85%;
-  max-width: 420px;
-  padding: 35px;
-  text-align: center;
-  border-radius: 20px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-}
-
-h1 {
-  font-size: 28px;
-}
-
-p {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-.firma {
-  margin-top: 25px;
-  font-size: 22px;
-}
-
-.frase {
-  font-style: italic;
-  margin-top: 20px;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -54,33 +15,41 @@ p {
 
 <div class="tarjeta">
 
-<h1>🏆 Ganador</h1>
+<div class="sello">🤎</div>
 
-<h2>🎉 ¡Felicidades!</h2>
+<div id="contador" class="contador">3</div>
 
-<p><strong>¡QUÉ SUERTE!</strong></p>
+<div id="resultado" class="oculto">
 
-<p>
-El centro de mesa es tuyo. ✨
+<div class="decoracion">❦</div>
+
+<h1>🎉 ¡Felicidades!</h1>
+
+<div class="ganaste">
+GANASTE
+</div>
+
+<div class="subtitulo">
+El centro de mesa es tuyo ✨
+</div>
+
+<p class="texto">
+¡Qué suerte!
 </p>
 
-<p>
+<p class="texto">
 Esperamos que cada vez que lo veas en tu casa recuerdes este día con una sonrisa.
 </p>
 
-<p>
+<p class="texto">
 Gracias por acompañarnos en este capítulo tan importante de nuestra historia.
 </p>
 
-<p>🤎</p>
+<div class="decoracion">🤎</div>
 
-<div class="firma">
+<div class="nombres">
 Brenda & Fernando
 </div>
-
-<p>
-<strong>P.D.:</strong> No te olvides de pedirnos la tapa de la botella antes de irte. 😉
-</p>
 
 <p class="frase">
 “No es una boda, es volver a elegirnos”
@@ -88,5 +57,11 @@ Brenda & Fernando
 
 </div>
 
+</div>
+
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
